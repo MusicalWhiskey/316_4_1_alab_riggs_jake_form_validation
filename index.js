@@ -8,10 +8,12 @@ const passwordCheck = document.getElementById('passwordCheck');
 const terms = document.getElementById('terms');
 const errorDisplay = document.getElementById('errorDisplay');
 
+console.log('hello');
+debugger;
 document.getElementById('registration').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission for validation
-
-    // Clear previous errors
+debugger;
+    // Clear old errors
     errorDisplay.style.display = 'none';
     errorDisplay.innerHTML = '';
 
@@ -39,18 +41,18 @@ document.getElementById('registration').addEventListener('submit', function (eve
         return;
     }
 
-    // Terms validation
+    // ToU validation
     if (!terms.checked) {
         displayError('You must agree to the Terms of Use.');
         return;
     }
 
-    // If all validations pass, store user data in localStorage
+    // Passed validation, store data
     storeUser(usernameVal, emailVal, passwordVal);
 
-    // Clear the form and display successful registration message
+    // Clear the form and display succesful validaiton message
     event.target.reset();
-    displaySuccess('Registration successful!');
+    displaySuccess('Registration Successful');
 });
 
 console.log(document.getElementById('registration'))
@@ -63,12 +65,12 @@ function displayError(message) {
 }
 
 // Display success messages for Registration and Login
-function displaySuccess(message) {
-    const errorDisplay = document.getElementById('errorDisplay');
-    errorDisplay.innerHTML = message;
-@@ -71,186 +70,179 @@
-    errorDisplay.style.fontWeight = 'bold';
-}
+// function displaySuccess(message) {
+//     const errorDisplay = document.getElementById('errorDisplay');
+//     errorDisplay.innerHTML = message;
+// @@ -71,186 +70,179 @@
+//     errorDisplay.style.fontWeight = 'bold';
+// }
 
 // Example: clearing the error display after successful submission
 // function clearErrorDisplay() {
