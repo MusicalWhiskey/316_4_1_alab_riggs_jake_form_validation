@@ -8,7 +8,7 @@ const passwordCheck = document.getElementById('passwordCheck');
 const terms = document.getElementById('terms');
 const errorDisplay = document.getElementById('errorDisplay');
 
-console.log('hello');
+console.log('hello')z
 debugger;
 document.getElementById('registration').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission for validation
@@ -65,19 +65,18 @@ function displayError(message) {
 }
 
 // Display success messages for Registration and Login
-// function displaySuccess(message) {
-//     const errorDisplay = document.getElementById('errorDisplay');
-//     errorDisplay.innerHTML = message;
-// @@ -71,186 +70,179 @@
-//     errorDisplay.style.fontWeight = 'bold';
-// }
+function displaySuccess(message) {
+    const errorDisplay = document.getElementById('errorDisplay');
+    errorDisplay.innerHTML = message;
+    errorDisplay.style.fontWeight = 'bold';
+}
 
 // Example: clearing the error display after successful submission
-// function clearErrorDisplay() {
-//     const errorDisplay = document.getElementById("errorDisplay");
-//     errorDisplay.innerHTML = ""; // Clear any messages
-//     errorDisplay.style.display = "none"; // Hide the display
-// }
+function clearErrorDisplay() {
+    const errorDisplay = document.getElementById("errorDisplay");
+    errorDisplay.innerHTML = ""; // Clear any messages
+    errorDisplay.style.display = "none"; // Hide the display
+}
 // Username validation
 function validateUsername(username) {
     console.log('username value', username);
