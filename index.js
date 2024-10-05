@@ -8,7 +8,7 @@ const passwordCheck = document.getElementById('passwordCheck');
 const terms = document.getElementById('terms');
 const errorDisplay = document.getElementById('errorDisplay');
 
-console.log('hello')z
+console.log('hello');
 debugger;
 document.getElementById('registration').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission for validation
@@ -24,7 +24,7 @@ debugger;
         username.focus();
         return;
     }
-
+debugger;
     // Email validation
     const emailVal = email.value;
     console.log(emailVal);
