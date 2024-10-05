@@ -41,5 +41,3 @@ function showError(message) {
     const errorDisplay = document.getElementById("errorDisplay");
     errorDisplay.innerText = message;
 }
-
-//================================================
